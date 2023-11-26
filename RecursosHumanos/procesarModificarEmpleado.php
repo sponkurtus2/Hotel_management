@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Ejecutar la consulta SQL
         if ($conn->query($sql) === TRUE) {
-            echo "Empleado modificado exitosamente";
+            header('Location: ./');
         } else {
             echo "Error al modificar empleado: " . $conn->error;
         }

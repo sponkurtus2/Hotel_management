@@ -82,6 +82,9 @@
 		<div>
 		<a href="ModificarEmpleado.php"><button>Modificar empleado</button></a>
 		</div>
+        <div>
+        <button type="button" onclick="window.location.href='../index.php'">Volver</button>
+        </div>
 	</div>
     </article>
 </body>

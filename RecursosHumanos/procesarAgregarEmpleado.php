@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO empleados (nombre_empleado, puesto, direccion, telefono) VALUES ('$nombre', '$puesto', '$direccion', '$telefono')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Empleado agregado exitosamente";
+        header('Location: ./');
     } else {
         echo "Error al agregar empleado: " . $conn->error;
     }

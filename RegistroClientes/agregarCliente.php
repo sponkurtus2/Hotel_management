@@ -44,9 +44,9 @@ $headers = "From: sponkurtus3@gmail.com";
 
 // Intentar enviar el correo
 if (mail($to, $subject, $message, $headers)) {
-    echo "Cliente registrado exitosamente y se ha enviado un correo de confirmación";
+    header('Location: ./');
 } else {
-    echo "Cliente registrado exitosamente, pero hubo un problema al enviar el correo de confirmación";
+    header('Location: ./');
 }
 } else {
     echo "Error al registrar al cliente: " . $conn->error;

@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "DELETE FROM empleados WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Empleado eliminado exitosamente";
+        header('Location: ./');
     } else {
         echo "Error al eliminar empleado: " . $conn->error;
     }

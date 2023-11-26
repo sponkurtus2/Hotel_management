@@ -32,6 +32,7 @@
                 </select>
                 <input type="text" name="email_cliente" placeholder="Email del cliente" required>
                 <button type="submit">Registrar</button>
+                <button type="button" onclick="window.location.href='../index.php'">Volver</button>
             </form>
         </article>
     </div>
